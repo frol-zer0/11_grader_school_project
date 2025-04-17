@@ -31,3 +31,6 @@ class Users(SUserAdd):
   finished_books: int
   description: Optional[str] = None
   
+class UserLoginSchema(BaseModel):
+  username: str
+  password: str

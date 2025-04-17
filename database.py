@@ -1,5 +1,3 @@
-import datetime
-import token
 from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 from sqlalchemy.ext.asyncio.engine import AsyncEngine
 from sqlalchemy.orm import DeclarativeBase, mapped_column, Mapped
@@ -17,6 +15,7 @@ user_engine: AsyncEngine = create_async_engine(
 
 
 new_session = async_sessionmaker(book_engine, expire_on_commit = False)
+
 
 class Model(DeclarativeBase):
   pass

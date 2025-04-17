@@ -2,3 +2,5 @@ venv
 tables
 __pycache__
 .vscode
+aaboba.py
+__pycache__

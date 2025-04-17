@@ -11,7 +11,7 @@ async def lifespan(app: FastAPI):
     yield
     print("Выключение")
 
-app = FastAPI(lifespan=lifespan,
-              tags=["Книги"])
+app = FastAPI(lifespan=lifespan)
 app.include_router(book_router)
 app.include_router(user_router)
+

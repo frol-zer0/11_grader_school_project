@@ -1,3 +1,6 @@
 venv
 Dockerfile
 tables
+aaboba.py
+.vscode
+__pycache__

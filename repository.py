@@ -42,5 +42,5 @@ class UserRepository:
     async with new_session() as session:
       query: Select[Tuple[UserORM]] = select(UserORM)
       result: Result[Tuple[UserORM]] = await session.execute(query)
-      book_models: Sequence[UserORM] = result.scalars().all()
-      return book_models
+      user_models: Sequence[UserORM] = result.scalars().all()
+      return user_models
